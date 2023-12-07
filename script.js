@@ -7,13 +7,13 @@ const ignoreWords = /(a|an|the)\s?/i;
 // i: This flag makes the matching case-insensitive.
 const soretdBand = bands.sort((a, b) => {
 	//ignore the words at the begining in each word
-	const alphaA = a.replace(ignoreWords,'');
-	const alphaB = b.replace(ignoreWords,'');
+	const alphaA = a.replace(ignoreWords,'').toLowerCase();
+	const alphaB = b.replace(ignoreWords,'').toLowerCase();
    // sort alphabatically 
 	return alphaA.localeCompare(alphaB);
 });
-// alert(soretdBand)  
-const ul = document.getElementById('band');
+alert(soretdBand)   
+const ul = document.getElementById('bands');
 soretdBand.forEach((band)=>{
 	const li = document.createElement('li');
 	li.textContent = band;
