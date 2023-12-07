@@ -1,1 +1,10 @@
 /*  your css code here. If applicable */
+ul{
+	margin:10px 100px;
+	border:1px solid lightgray;
+}
+ul li{
+	padding:10px;
+	list-style-type:square;
+	border-bottom:1px solid lightgray;
+}
